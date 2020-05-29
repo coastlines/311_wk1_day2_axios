@@ -29,7 +29,6 @@ const getMovieByIdFailure = () => {
   const url = `https://api.themoviedb.org/3/movie/${fakeId}?api_key=${api_key}`
   return axios.get(url)
     .then(function (response) {
-      console.log(response)
       return response
   })
     .catch(function (error) {
